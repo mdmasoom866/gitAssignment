@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+ques-1
+    <table border="1">
+        <tr>
+            <th>Course Name</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>Lorem Ipsum 1</td>
+            <td>Lorem 4 months</td>
+        </tr>
+        <tr>
+            <td>Lorem Ipsum 2</td>
+            <td>Lorem 5 months</td>
+        </tr>
+    </table>
+    ques-2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+
+    <table border="1">
+        <caption>Monthly Workshop Schedule</caption>
+        <tr>
+            <th>Workshop</th>
+            <th>Month</th>
+        </tr>
+        <tr>
+            <td>Lorem Workshop A</td>
+            <td>Lorem Month 1</td>
+        </tr>
+        <tr>
+            <td>Lorem Workshop B</td>
+            <td>Lorem Month 2</td>
+        </tr>
+    </table>
+ques-3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Institute Programs</th>
+        </tr>
+        <tr>
+            <td>Lorem Program 1</td>
+            <td>Lorem Program 2</td>
+        </tr>
+    </table>
+ques;4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <td rowspan="2">Programming Track</td>
+            <td>Semester 1</td>
+        </tr>
+        <tr>
+            <td>Semester 2</td>
+        </tr>
+    </table>
+ques;5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+</head>
+<body>
+
+    <table border="1">
+        <caption>Student Performance Report</caption>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem Student A</td>
+                <td>Lorem Grade A</td>
+            </tr>
+            <tr>
+                <td>Lorem Student B</td>
+                <td>Lorem Grade B</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">End of Report</td>
+            </tr>
+        </tfoot>
+    </table>
+ques;6
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">City</th>
+        </tr>
+        <tr>
+            <td>Lorem Name 1</td>
+            <td>Lorem 20</td>
+            <td>Lorem City A</td>
+        </tr>
+        <tr>
+            <td>Lorem Name 2</td>
+            <td>Lorem 22</td>
+            <td>Lorem City B</td>
+        </tr>
+    </table>
+    ques;7
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th scope="row">Course</th>
+            <td>Lorem Course Name</td>
+        </tr>
+        <tr>
+            <th scope="row">Duration</th>
+            <td>Lorem 6 Months</td>
+        </tr>
+        <tr>
+            <th scope="row">Mode</th>
+            <td>Lorem Online</td>
+        </tr>
+    </table>
+    ques;8
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th id="subject">Subject</th>
+            <th id="marks">Marks</th>
+            <th id="result">Result</th>
+        </tr>
+        <tr>
+            <td headers="subject">Lorem Subject A</td>
+            <td headers="marks">Lorem 85</td>
+            <td headers="result">Lorem Pass</td>
+        </tr>
+        <tr>
+            <td headers="subject">Lorem Subject B</td>
+            <td headers="marks">Lorem 90</td>
+            <td headers="result">Lorem Pass</td>
+        </tr>
+    </table>
+ques;9
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+<body>
+
+    <table border="1">
+        <caption>Department Summary</caption>
+        <thead>
+            <tr>
+                <th scope="col">Department</th>
+                <th scope="col">Members</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem Dept A</td>
+                <td>Lorem 10</td>
+            </tr>
+            <tr>
+                <td>Lorem Dept B</td>
+                <td>Lorem 15</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Overall Total: Lorem 25</td>
+            </tr>
+        </tfoot>
+    </table>
+ques;10
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+<body>
+
+    <table border="1">
+        <caption>Complete Report</caption>
+        <thead>
+            <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Item</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">Lorem Group</th>
+                <td>Lorem Item 1</td>
+                <td>Lorem Active</td>
+            </tr>
+            <tr>
+                <td>Lorem Item 2</td>
+                <td>Lorem Active</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Lorem Summary Footer</td>
+            </tr>
+        </tfoot>
+    </table>
+ques;11
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+</head>
+<body>
+
+    <table border="1">
+        <caption>Weekly Class Schedule</caption>
+        <tr>
+            <th>Day</th>
+            <th>Subject</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Monday</td>
+            <td>Lorem HTML</td>
+        </tr>
+        <tr>
+            <td>Lorem CSS</td>
+        </tr>
+        <tr>
+            <td>Lorem JavaScript</td>
+        </tr>
+    </table>
+ques;12
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th colspan="3">Course Comparison</th>
+        </tr>
+        <tr>
+            <th>Feature</th>
+            <th>Course A</th>
+            <th>Course B</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Duration</td>
+            <td>Lorem 3 Months</td>
+            <td>Lorem 6 Months</td>
+        </tr>
+        <tr>
+            <td>Lorem Online</td>
+            <td>Lorem Offline</td>
+        </tr>
+    </table>
+ques;13
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 13</title>
+</head>
+<body>
+
+    <table border="1">
+        <caption>Internal Assessment Marks</caption>
+        <thead>
+            <tr>
+                <th scope="col">Student</th>
+                <th scope="col">Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem Student 1</td>
+                <td>Lorem 88</td>
+            </tr>
+            <tr>
+                <td>Lorem Student 2</td>
+                <td>Lorem 94</td>
+            </tr>
+            <tr>
+                <td>Lorem Student 3</td>
+                <td>Lorem 76</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Highest Score: Lorem 94</td>
+            </tr>
+        </tfoot>
+    </table>
+ques;14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 14</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th></th>
+            <th id="col1" scope="col">Col Header 1</th>
+            <th id="col2" scope="col">Col Header 2</th>
+        </tr>
+        <tr>
+            <th id="row1" scope="row">Row Header 1</th>
+            <td headers="col1 row1">Lorem Data 11</td>
+            <td headers="col2 row1">Lorem Data 12</td>
+        </tr>
+        <tr>
+            <th id="row2" scope="row">Row Header 2</th>
+            <td headers="col1 row2">Lorem Data 21</td>
+            <td headers="col2 row2">Lorem Data 22</td>
+        </tr>
+    </table>
+    ques;15
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 15</title>
+</head>
+<body>
+
+    <table border="1">
+        <caption>Advanced Combined Master Table</caption>
+        <thead>
+            <tr>
+                <th id="h1" scope="col">Category</th>
+                <th id="h2" scope="col">Item Details</th>
+                <th id="h3" scope="col">Units</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="r1" scope="row" rowspan="2">Lorem Group A</th>
+                <td headers="h2 r1">Lorem Product 1</td>
+                <td headers="h3 r1">Lorem 50</td>
+            </tr>
+            <tr>
+                <td headers="h2 r1">Lorem Product 2</td>
+                <td headers="h3 r1">Lorem 30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Lorem Total Summary Footer</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+</html
+    

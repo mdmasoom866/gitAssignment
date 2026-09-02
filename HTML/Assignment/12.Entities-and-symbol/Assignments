@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Here are the solutions for Questions 1 through 10 using proper HTML entities:
+
+Question 1: Reserved Characters
+Named Entities:
+
+HTML
+<p>In HTML, we open a tag with the &lt; character.</p>
+<p>To close an element tag, use the &gt; character.</p>
+<p>For research &amp; development, proper encoding is necessary.</p>
+Hexadecimal Entities:
+
+HTML
+<p>In HTML, we open a tag with the &#x3C; character.</p>
+<p>To close an element tag, use the &#x3E; character.</p>
+<p>For research &#x26; development, proper encoding is necessary.</p>
+Question 2: Currency Symbols
+HTML
+<p>Price A: &euro;15.00 (Named) / &#x20AC;15.00 (Hexadecimal)</p>
+<p>Price B: &pound;25.00 (Named) / &#163;25.00 (Decimal)</p>
+<p>Price C: &yen;3000 (Named: &amp;yen;)</p>
+Question 3: Mathematical Statements
+HTML
+<p>5 &ne; 10</p>
+<p>&#x2211; (x + y) = Total</p>
+<p>The limit approaches &#8734;.</p>
+Question 4: En Dash and Em Dash
+Named Entities:
+
+HTML
+<p>The event runs during 2023&ndash;2025.</p>
+<p>She had one primary goal&mdash;to master HTML entities.</p>
+Hexadecimal Entities:
+
+HTML
+<p>The event runs during 2023&#x2013;2025.</p>
+<p>She had one primary goal&#x2014;to master HTML entities.</p>
+Question 5: Copyright and Branding Footer
+HTML
+<p>&copy; 2026 TechCorp. All rights reserved.</p>
+<p>TechCorp&reg; is a registered brand name (Hex: &#xAE;).</p>
+<p>SuperApp&trade; is our flagship software (Decimal: &#8482;).</p>
+Question 6: Directional Arrows
+HTML
+<p>Back &larr;</p>
+<p>Next &#x2192;</p>
+<p>Top &#8593;</p>
+Question 7: Emojis with Numeric Entities
+HTML
+<p>Have a great day! &#x1F642;</p>
+<p>Task completed successfully. &#9989;</p>
+<p>Built with care. &hearts;</p>
+Question 8: Symbol Comparison (Copyright Symbol)
+HTML
+<p>Named Entity: &copy;</p>
+<p>Hexadecimal Entity: &#x00A9;</p>
+<p>Decimal Entity: &#169;</p>
+Question 9: Product Description
+HTML
+<p>
+  Introducing SpeedPro&trade; Wireless Earbuds &amp; Accessories! 
+  Save big now: under &euro;50 (original price &gt; &#x20AC;70). 
+  Enjoy infinite &#8734; audio performance. 
+  Buy now &#x2192;
+</p>
+Question 10: Symbol Reference Mini Page
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Symbol Reference</title>
+</head>
+<body>
+
+    <h2>HTML Symbol Reference Guide</h2>
+
+    <p><strong>Reserved Characters:</strong> Use &lt;code&gt; tags safely with &amp;lt; and &amp;gt; entities.</p>
+    
+    <p><strong>Currency Symbols:</strong> Total cost is &euro;45.00 or &pound;38.00.</p>
+    
+    <p><strong>Mathematical Symbols:</strong> If x &ne; y, then the sum &#x2211; must be calculated.</p>
+    
+    <p><strong>Arrows:</strong> Click here to proceed &rarr;</p>
+    
+    <p><strong>Legal & Emojis:</strong> &copy; 2026 Acme Corp&#8482;. Approved &#9989;.</p>
+
+</body>
+</html>
+    
+</body>
+</html>

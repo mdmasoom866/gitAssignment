@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ques;1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+
+    <ul style="list-style-type: disc;">
+        <li>Lorem Ipsum 1</li>
+        <li>Lorem Ipsum 2</li>
+        <li>Lorem Ipsum 3</li>
+        <li>Lorem Ipsum 4</li>
+    </ul>
+ques;2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+
+    <ul type="circle">
+        <li>Lorem Tech 1</li>
+        <li>Lorem Tech 2</li>
+        <li>Lorem Tech 3</li>
+    </ul>
+    ques;3
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+
+    <ul type="square">
+        <li>Lorem Skill 1</li>
+        <li>Lorem Skill 2</li>
+        <li>Lorem Skill 3</li>
+        <li>Lorem Skill 4</li>
+    </ul>
+    ques;4
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body>
+
+    <ol type="1">
+        <li>Lorem Step 1</li>
+        <li>Lorem Step 2</li>
+        <li>Lorem Step 3</li>
+        <li>Lorem Step 4</li>
+    </ol>
+ques;5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+</head>
+<body>
+
+    <ol start="3">
+        <li>Lorem Module 1</li>
+        <li>Lorem Module 2</li>
+        <li>Lorem Module 3</li>
+        <li>Lorem Module 4</li>
+    </ol>
+ques;6
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+
+    <ol type="A">
+        <li>Lorem Phase 1</li>
+        <li>Lorem Phase 2</li>
+        <li>Lorem Phase 3</li>
+    </ol>
+ques;7
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+</head>
+<body>
+
+    <ol type="a">
+        <li>Lorem Task 1</li>
+        <li>Lorem Task 2</li>
+        <li>Lorem Task 3</li>
+        <li>Lorem Task 4</li>
+    </ol>
+ques;8
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+</head>
+<body>
+
+    <ol type="I">
+        <li>Lorem Rule 1</li>
+        <li>Lorem Rule 2</li>
+        <li>Lorem Rule 3</li>
+    </ol>
+ques;9
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+<body>
+
+    <ol type="i">
+        <li>Lorem Chapter 1</li>
+        <li>Lorem Chapter 2</li>
+        <li>Lorem Chapter 3</li>
+        <li>Lorem Chapter 4</li>
+    </ol>
+ques;10
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+<body>
+
+    <ol type="1" reversed>
+        <li>Lorem Stage 1</li>
+        <li>Lorem Stage 2</li>
+        <li>Lorem Stage 3</li>
+        <li>Lorem Stage 4</li>
+    </ol>
+ques;11
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+</head>
+<body>
+
+    <ol type="A" reversed>
+        <li>Lorem Point 1</li>
+        <li>Lorem Point 2</li>
+        <li>Lorem Point 3</li>
+    </ol>
+ques;12
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12</title>
+</head>
+<body>
+
+    <ol>
+        <li>Lorem Topic 1</li>
+        <li value="5">Lorem Topic 2</li>
+        <li>Lorem Topic 3</li>
+        <li>Lorem Topic 4</li>
+    </ol>
+ques;13
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 13</title>
+</head>
+<body>
+
+    <dl>
+        <dt>Lorem Term 1</dt>
+        <dd>Lorem ipsum dolor sit amet description 1.</dd>
+        <dt>Lorem Term 2</dt>
+        <dd>Lorem ipsum dolor sit amet description 2.</dd>
+        <dt>Lorem Term 3</dt>
+        <dd>Lorem ipsum dolor sit amet description 3.</dd>
+    </dl>
+ques;14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 14</title>
+</head>
+<body>
+
+    <dl>
+        <dt>Lorem Institute Term 1</dt>
+        <dd>Lorem ipsum description for institute term 1.</dd>
+        <dt>Lorem Institute Term 2</dt>
+        <dd>Lorem ipsum description for institute term 2.</dd>
+    </dl>
+ques;15
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 15</title>
+</head>
+<body>
+
+    <ul type="disc">
+        <li>Lorem Main Category 1
+            <ul type="circle">
+                <li>Lorem Tech 1.1</li>
+                <li>Lorem Tech 1.2</li>
+            </ul>
+        </li>
+        <li>Lorem Main Category 2
+            <ul type="square">
+                <li>Lorem Tech 2.1</li>
+                <li>Lorem Tech 2.2</li>
+            </ul>
+        </li>
+    </ul>
+ques;16
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+</head>
+<body>
+
+    <ul>
+        <li>Lorem Topic 1
+            <ol>
+                <li>Lorem Sub-topic 1.1</li>
+                <li>Lorem Sub-topic 1.2</li>
+            </ol>
+        </li>
+        <li>Lorem Topic 2
+            <ol>
+                <li>Lorem Sub-topic 2.1</li>
+                <li>Lorem Sub-topic 2.2</li>
+            </ol>
+        </li>
+    </ul>
+ques;17
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 17</title>
+</head>
+<body>
+
+    <ol>
+        <li>Lorem Main Step 1</li>
+        <li>Lorem Main Step 2
+            <ul>
+                <li>Lorem Sub-step 2.1</li>
+                <li>Lorem Sub-step 2.2</li>
+            </ul>
+        </li>
+        <li>Lorem Main Step 3</li>
+    </ol>
+ques;18
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 18</title>
+</head>
+<body>
+
+    <ul type="square">
+        <li>Lorem Item 1
+            <ol type="A">
+                <li>Lorem Sub-item 1A</li>
+                <li>Lorem Sub-item 1B</li>
+            </ol>
+        </li>
+        <li>Lorem Item 2
+            <ul type="circle">
+                <li>Lorem Sub-item 2A</li>
+                <li>Lorem Sub-item 2B</li>
+            </ul>
+        </li>
+    </ul>
+ques;19
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 19</title>
+</head>
+<body>
+
+    <ol start="10" reversed>
+        <li>Lorem Rank Item 1</li>
+        <li>Lorem Rank Item 2</li>
+        <li>Lorem Rank Item 3</li>
+        <li>Lorem Rank Item 4</li>
+        <li>Lorem Rank Item 5</li>
+    </ol>
+ques;20
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 20</title>
+</head>
+<body>
+
+    <ol>
+        <li>Lorem Question 1</li>
+        <li>Lorem Question 2</li>
+        <li value="10">Lorem Question 3</li>
+        <li>Lorem Question 4</li>
+        <li value="20">Lorem Question 5</li>
+        <li>Lorem Question 6</li>
+    </ol>
+ques;21
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 21</title>
+</head>
+<body>
+
+    <dl>
+        <dt>Lorem Single Term</dt>
+        <dd>Lorem description first for this term.</dd>
+        <dd>Lorem description second for this term.</dd>
+    </dl>
+ques;22
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 22</title>
+</head>
+<body>
+
+    <ol>
+        <li>Lorem Main Section 1
+            <ul>
+                <li>Lorem Unordered Item 1</li>
+                <li>Lorem Unordered Item 2</li>
+            </ul>
+        </li>
+        <li>Lorem Main Section 2
+            <dl>
+                <dt>Lorem Term</dt>
+                <dd>Lorem Description</dd>
+            </dl>
+        </li>
+        <li>Lorem Main Section 3</li>
+    </ol>
+ques;23
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 23</title>
+</head>
+<body>
+
+    <ul type="square">
+        <li>Lorem Grocery 1</li>
+        <li>Lorem Grocery 2</li>
+        <li>Lorem Grocery 3</li>
+        <li>Lorem Grocery 4</li>
+        <li>Lorem Grocery 5</li>
+        <li>Lorem Grocery 6</li>
+    </ul>
+ques;24
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 24</title>
+</head>
+<body>
+
+    <ol type="1" start="1">
+        <li>Lorem Step 1</li>
+        <li>Lorem Step 2</li>
+        <li>Lorem Step 3</li>
+        <li>Lorem Step 4</li>
+        <li>Lorem Step 5</li>
+    </ol>
+ques;25
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 25</title>
+</head>
+<body>
+
+    <ol type="I">
+        <li>Lorem Advantage 1</li>
+        <li>Lorem Advantage 2</li>
+        <li>Lorem Advantage 3</li>
+        <li>Lorem Advantage 4</li>
+    </ol>
+ques;26
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 26</title>
+</head>
+<body>
+
+    <ol>
+        <li>Lorem Module 1
+            <ul>
+                <li>Lorem Topic 1.1</li>
+                <li>Lorem Topic 1.2</li>
+                <li>Lorem Topic 1.3</li>
+            </ul>
+        </li>
+        <li>Lorem Module 2
+            <ul>
+                <li>Lorem Topic 2.1</li>
+                <li>Lorem Topic 2.2</li>
+                <li>Lorem Topic 2.3</li>
+            </ul>
+        </li>
+    </ol>
+ques;27
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 27</title>
+</head>
+<body>
+
+    <dl>
+        <dt>Lorem Unordered List</dt>
+        <dd>Lorem description for unordered list element.</dd>
+        
+        <dt>Lorem Ordered List</dt>
+        <dd>Lorem description for ordered list element.</dd>
+        
+        <dt>Lorem Description List</dt>
+        <dd>Lorem description for description list element.</dd>
+    </dl>
+ques;28
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 28</title>
+</head>
+<body>
+
+    <ol type="a" reversed>
+        <li>Lorem Task 1</li>
+        <li>Lorem Task 2</li>
+        <li>Lorem Task 3</li>
+        <li>Lorem Task 4</li>
+    </ol>
+ques;29
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 29</title>
+</head>
+<body>
+
+    <ol start="5" reversed>
+        <li>Lorem Item 1</li>
+        <li>Lorem Item 2</li>
+        <li value="10">Lorem Item 3 Override</li>
+        <li>Lorem Item 4</li>
+        <li>Lorem Item 5</li>
+    </ol>
+ques;30
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 30</title>
+</head>
+<body>
+
+    <h1>Lorem Comprehensive Example</h1>
+
+    <!-- Unordered list with specific bullet type -->
+    <ul type="square">
+        <li>Lorem Unordered Item 1</li>
+        <li>Lorem Unordered Item 2</li>
+    </ul>
+
+    <!-- Ordered list with type, start, and reversed -->
+    <ol type="A" start="3" reversed>
+        <li>Lorem Ordered Item 1</li>
+        <li>Lorem Ordered Item 2</li>
+    </ol>
+
+    <!-- Description list -->
+    <dl>
+        <dt>Lorem Term A</dt>
+        <dd>Lorem description A.</dd>
+        <dt>Lorem Term B</dt>
+        <dd>Lorem description B.</dd>
+    </dl>
+
+    <!-- Nested list -->
+    <ul>
+        <li>Lorem Parent Item
+            <ol>
+                <li>Lorem Nested Child Item 1</li>
+                <li>Lorem Nested Child Item 2</li>
+            </ol>
+        </li>
+    </ul>
+ques;31
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 31</title>
+</head>
+<body>
+
+    <ul>
+        <li>Lorem Category 1
+            <dl>
+                <dt>Lorem Term 1</dt>
+                <dd>Lorem Description 1</dd>
+            </dl>
+        </li>
+        <li>Lorem Category 2
+            <dl>
+                <dt>Lorem Term 2</dt>
+                <dd>Lorem Description 2</dd>
+            </dl>
+        </li>
+    </ul>
+ques;32
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 32</title>
+</head>
+<body>
+
+    <ol>
+        <li value="1">Lorem Rule 1</li>
+        <li>Lorem Rule 2</li>
+        <li value="5">Lorem Rule 3</li>
+        <li>Lorem Rule 4</li>
+        <li>Lorem Rule 5</li>
+    </ol>
+ques;33
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 33</title>
+</head>
+<body>
+
+    <ul type="square">
+        <li>Lorem Main Item 1
+            <ol type="A">
+                <li>Lorem Sub Item 1.1</li>
+                <li>Lorem Sub Item 1.2
+                    <ul type="circle">
+                        <li>Lorem Deep Item 1.2.1</li>
+                        <li>Lorem Deep Item 1.2.2</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>Lorem Main Item 2</li>
+    </ul>
+ques;34
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 34</title>
+</head>
+<body>
+
+    <dl>
+        <dt>Lorem UL</dt>
+        <dd>Lorem description for unordered list comparison.</dd>
+        
+        <dt>Lorem OL</dt>
+        <dd>Lorem description for ordered list comparison.</dd>
+        
+        <dt>Lorem DL</dt>
+        <dd>Lorem description for description list comparison.</dd>
+    </dl>
+ques;35
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 35</title>
+</head>
+<body>
+
+    <ol type="I">
+        <!-- Section 1 with Unordered List -->
+        <li>Lorem Section 1
+            <ul type="square">
+                <li>Lorem Item 1.1</li>
+                <li>Lorem Item 1.2</li>
+            </ul>
+        </li>
+
+        <!-- Section 2 with Description List -->
+        <li>Lorem Section 2
+            <dl>
+                <dt>Lorem Term 2.1</dt>
+                <dd>Lorem Description 2.1</dd>
+            </dl>
+        </li>
+
+        <!-- Section 3 with Nested Start Ordered List -->
+        <li>Lorem Section 3
+            <ol type="a" start="5">
+                <li>Lorem Item 3.1</li>
+                <li>Lorem Item 3.2</li>
+            </ol>
+        </li>
+    </ol>
+
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+
+</body>
+</html>
+
+</body>
+</html>
+</body>
+</html>    
+</body>
+</html>

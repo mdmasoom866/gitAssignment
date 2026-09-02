@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Here are the HTML form solutions for all 42 exercises:
+
+1. Basic Form Structure
+HTML
+<form action="/submit.php" method="post" autocomplete="on">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+  <button type="submit">Submit</button>
+</form>
+2. Form with GET Method
+HTML
+<form action="/search.php" method="get">
+  <label for="search">Search:</label>
+  <input type="search" id="search" name="q">
+  <button type="submit">Search</button>
+</form>
+3. Form without Browser Validation
+HTML
+<form action="/submit.php" method="post" novalidate>
+  <label for="email">Email (Required):</label>
+  <input type="email" id="email" name="email" required>
+  <button type="submit">Submit Without Validation</button>
+</form>
+4. Understanding enctype – Default Value
+HTML
+<!-- 
+  application/x-www-form-urlencoded is the default encoding type. 
+  It converts spaces into '+' signs and special characters into ASCII hex values.
+-->
+<form action="/submit.php" method="post" enctype="application/x-www-form-urlencoded">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  
+  <label for="user_email">Email:</label>
+  <input type="email" id="user_email" name="user_email">
+  
+  <button type="submit">Submit</button>
+</form>
+5. File Upload Form (Most Important enctype)
+HTML
+<form action="/upload.php" method="post" enctype="multipart/form-data">
+  <label for="file_upload">Select File:</label>
+  <input type="file" id="file_upload" name="file_upload">
+  <button type="submit">Upload</button>
+</form>
+6. Form Using text/plain Encoding
+HTML
+<!-- Note: text/plain sends raw text without encoding. It is rarely used in production. -->
+<form action="/submit.php" method="post" enctype="text/plain">
+  <label for="field1">Field 1:</label>
+  <input type="text" id="field1" name="field1">
+  
+  <label for="field2">Field 2:</label>
+  <input type="text" id="field2" name="field2">
+  
+  <button type="submit">Submit</button>
+</form>
+7. Form with Name and Target
+HTML
+<form action="/submit.php" method="post" name="userForm" target="_blank">
+  <label for="info">Information:</label>
+  <input type="text" id="info" name="info">
+  <button type="submit">Open in New Tab</button>
+</form>
+8. Proper Use of Label
+HTML
+<form action="/submit.php" method="post">
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email">
+</form>
+9. Radio Button Group with Labels
+HTML
+<form action="/submit.php" method="post">
+  <p>Gender:</p>
+  <input type="radio" id="male" name="gender" value="male" checked>
+  <label for="male">Male</label>
+
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+</form>
+10. Multiple Checkboxes
+HTML
+<form action="/submit.php" method="post">
+  <p>Hobbies:</p>
+  <input type="checkbox" id="reading" name="hobbies" value="reading" checked>
+  <label for="reading">Reading</label>
+
+  <input type="checkbox" id="sports" name="hobbies" value="sports">
+  <label for="sports">Sports</label>
+
+  <input type="checkbox" id="music" name="hobbies" value="music">
+  <label for="music">Music</label>
+</form>
+11. Drop-down List (Single Select)
+HTML
+<form action="/submit.php" method="post">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+  </select>
+</form>
+12. Multi-select Drop-down
+HTML
+<form action="/submit.php" method="post">
+  <label for="cars_multi">Choose cars:</label>
+  <select id="cars_multi" name="cars" multiple size="3">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</form>
+13. Grouped Options with optgroup
+HTML
+<form action="/submit.php" method="post">
+  <label for="fruits">Choose a fruit:</label>
+  <select id="fruits" name="fruits">
+    <optgroup label="Citrus">
+      <option value="orange">Orange</option>
+      <option value="lemon">Lemon</option>
+    </optgroup>
+    <optgroup label="Berries">
+      <option value="strawberry">Strawberry</option>
+      <option value="blueberry">Blueberry</option>
+    </optgroup>
+  </select>
+</form>
+14. Multi-line Text Area
+HTML
+<form action="/submit.php" method="post">
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+</form>
+15. Button Types
+HTML
+<form action="/submit.php" method="post">
+  <button type="submit">Submit Form</button>
+  <button type="reset">Reset Form</button>
+  <button type="button">Click Me</button>
+</form>
+16. Fieldset and Legend
+HTML
+<form action="/submit.php" method="post">
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname">
+  </fieldset>
+</form>
+17. Disabled Fieldset
+HTML
+<form action="/submit.php" method="post">
+  <fieldset disabled>
+    <legend>Account Credentials (Disabled)</legend>
+    <label for="user">Username:</label>
+    <input type="text" id="user" name="user"><br><br>
+    
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="pass">
+  </fieldset>
+</form>
+18. Datalist for Autocomplete Suggestions
+HTML
+<form action="/submit.php" method="post">
+  <label for="browser_input">Choose your browser:</label>
+  <input list="browsers" id="browser_input" name="browser">
+  
+  <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Edge">
+    <option value="Safari">
+  </datalist>
+</form>
+19. Password Field with Constraints
+HTML
+<form action="/submit.php" method="post">
+  <label for="user_pass">Password:</label>
+  <input type="password" id="user_pass" name="password" required minlength="8">
+  <button type="submit">Register</button>
+</form>
+20. Email Input with Multiple Values
+HTML
+<form action="/submit.php" method="post">
+  <label for="email_list">Enter Email Addresses:</label>
+  <input type="email" id="email_list" name="emails" multiple placeholder="user1@example.com, user2@example.com">
+  <button type="submit">Send</button>
+</form>
+21. Date Picker with Range
+HTML
+<form action="/submit.php" method="post">
+  <label for="select_date">Select Date (2023):</label>
+  <input type="date" id="select_date" name="date_2023" min="2023-01-01" max="2023-12-31">
+</form>
+22. Number Input with Step
+HTML
+<form action="/submit.php" method="post">
+  <label for="quantity">Quantity (1-10):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="10" step="1">
+</form>
+23. Range Slider
+HTML
+<form action="/submit.php" method="post">
+  <label for="volume">Volume Control:</label>
+  <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+</form>
+24. File Input with Restrictions
+HTML
+<form action="/upload.php" method="post" enctype="multipart/form-data">
+  <label for="doc">Upload Document (.pdf, .docx):</label>
+  <input type="file" id="doc" name="document" accept=".pdf,.docx" required>
+  <button type="submit">Upload</button>
+</form>
+25. Hidden Input
+HTML
+<form action="/submit.php" method="post">
+  <input type="hidden" name="session_token" value="xyz123456789">
+  <button type="submit">Submit Data</button>
+</form>
+26. Color Picker
+HTML
+<form action="/submit.php" method="post">
+  <label for="favcolor">Select Favorite Color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+</form>
+27. Telephone Input with Pattern
+HTML
+<form action="/submit.php" method="post">
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+  <button type="submit">Submit</button>
+</form>
+28. URL Input
+HTML
+<form action="/submit.php" method="post">
+  <label for="website">Website URL:</label>
+  <input type="url" id="website" name="website" required placeholder="https://example.com">
+  <button type="submit">Submit</button>
+</form>
+29. Search Field with Autofocus
+HTML
+<form action="/search.php" method="get">
+  <label for="site_search">Search Site:</label>
+  <input type="search" id="site_search" name="q" autofocus placeholder="Search here...">
+</form>
+30. Using the form Attribute (Input Outside Form)
+HTML
+<form action="/submit.php" method="post" id="external_form">
+  <button type="submit">Submit Form</button>
+</form>
+
+<!-- External Input -->
+<label for="external_input">Outside Input:</label>
+<input type="text" id="external_input" name="outside_data" form="external_form">
+31. formaction Override
+HTML
+<form action="/default.php" method="post">
+  <label for="field">Data:</label>
+  <input type="text" id="field" name="data">
+  
+  <button type="submit">Default Submit</button>
+  <button type="submit" formaction="/custom.php">Submit to Custom Endpoint</button>
+</form>
+32. formmethod Override
+HTML
+<form action="/submit.php" method="post">
+  <label for="query">Input:</label>
+  <input type="text" id="query" name="query">
+  
+  <button type="submit">POST Submit</button>
+  <button type="submit" formmethod="get">GET Submit</button>
+</form>
+33. formnovalidate
+HTML
+<form action="/register.php" method="post">
+  <label for="reg_email">Email (Required):</label>
+  <input type="email" id="reg_email" name="email" required>
+  
+  <button type="submit">Register</button>
+  <button type="submit" formnovalidate>Save as Draft</button>
+</form>
+34. formtarget
+HTML
+<form action="/submit.php" method="post">
+  <label for="data_input">Content:</label>
+  <input type="text" id="data_input" name="content">
+  
+  <button type="submit">Submit</button>
+  <button type="submit" formtarget="_blank">Preview in New Tab</button>
+</form>
+35. Complete Login Form
+HTML
+<form action="/login.php" method="post">
+  <div>
+    <label for="login_user">Username:</label>
+    <input type="text" id="login_user" name="username" required>
+  </div>
+  <br>
+  <div>
+    <label for="login_pass">Password:</label>
+    <input type="password" id="login_pass" name="password" minlength="8" required>
+  </div>
+  <br>
+  <button type="submit">Log In</button>
+</form>
+36. Complete Registration Form with Fieldsets
+HTML
+<form action="/register.php" method="post">
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label for="reg_name">Full Name:</label>
+    <input type="text" id="reg_name" name="fullname" required><br><br>
+    
+    <label for="reg_user_email">Email:</label>
+    <input type="email" id="reg_user_email" name="email" required>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Preferences</legend>
+    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+    <label for="newsletter">Subscribe to Newsletter</label>
+  </fieldset>
+  <br>
+  <button type="submit">Register</button>
+</form>
+37. Contact Us Form
+HTML
+<form action="/contact.php" method="post">
+  <div>
+    <label for="contact_name">Name:</label>
+    <input type="text" id="contact_name" name="name" required>
+  </div>
+  <br>
+  <div>
+    <label for="contact_email">Email:</label>
+    <input type="email" id="contact_email" name="email" required>
+  </div>
+  <br>
+  <div>
+    <label for="contact_message">Message:</label><br>
+    <textarea id="contact_message" name="message" rows="5" cols="40" required></textarea>
+  </div>
+  <br>
+  <button type="submit">Send Message</button>
+</form>
+38. Survey / Feedback Form
+HTML
+<form action="/feedback.php" method="post">
+  <div>
+    <label for="satisfaction">Satisfaction (1-10):</label>
+    <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5">
+  </div>
+  <br>
+  <div>
+    <p>Would you recommend us?</p>
+    <input type="radio" id="rec_yes" name="recommend" value="yes">
+    <label for="rec_yes">Yes</label>
+    
+    <input type="radio" id="rec_no" name="recommend" value="no">
+    <label for="rec_no">No</label>
+  </div>
+  <br>
+  <div>
+    <label for="comments_text">Comments:</label><br>
+    <textarea id="comments_text" name="comments" rows="4" cols="40"></textarea>
+  </div>
+  <br>
+  <button type="submit">Submit Feedback</button>
+</form>
+39. Complete File Upload Form
+HTML
+<form action="/upload_documents.php" method="post" enctype="multipart/form-data">
+  <div>
+    <label for="resume">Resume (.pdf, .docx):</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.docx" required>
+  </div>
+  <br>
+  <div>
+    <label for="photo">Profile Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+  </div>
+  <br>
+  <button type="submit">Upload Files</button>
+</form>
+40. Search Form Using GET
+HTML
+<form action="/search.php" method="get">
+  <label for="main_search">Search Site:</label>
+  <input type="search" id="main_search" name="q" autofocus placeholder="Search topics...">
+  <button type="submit">Search</button>
+</form>
+41. Advanced Form Combining Many Features
+HTML
+<form action="/apply.php" method="post" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Personal Details</legend>
+    <label for="app_name">Name:</label>
+    <input type="text" id="app_name" name="name" required><br><br>
+    
+    <label for="app_email">Email:</label>
+    <input type="email" id="app_email" name="email" required><br><br>
+    
+    <label for="app_phone">Phone:</label>
+    <input type="tel" id="app_phone" name="phone">
+  </fieldset>
+  
+  <fieldset>
+    <legend>Experience</legend>
+    <label for="app_exp">Summary of Experience:</label><br>
+    <textarea id="app_exp" name="experience" rows="4" cols="50"></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Documents & Status</legend>
+    <label for="app_resume">Resume (PDF only):</label>
+    <input type="file" id="app_resume" name="resume" accept=".pdf" required><br><br>
+    
+    <p>Employment Type:</p>
+    <input type="radio" id="fulltime" name="emp_type" value="fulltime">
+    <label for="fulltime">Full-Time</label>
+    <input type="radio" id="parttime" name="emp_type" value="parttime">
+    <label for="parttime">Part-Time</label>
+  </fieldset>
+  <br>
+  <div>
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions</label>
+  </div>
+  <br>
+  <button type="submit">Submit Application</button>
+  <button type="submit" formnovalidate>Save Draft</button>
+</form>
+42. Form Demonstrating All Major Override Attributes
+HTML
+<form action="/default_action.php" method="post" target="_self">
+  <div>
+    <label for="field1">Field 1 (Required):</label>
+    <input type="text" id="field1" name="field1" required>
+  </div>
+  <br>
+  <div>
+    <label for="field2">Field 2 (Required):</label>
+    <input type="text" id="field2" name="field2" required>
+  </div>
+  <br>
+  <!-- Normal Submit -->
+  <button type="submit">Standard Submit</button>
+  
+  <!-- Formaction Override -->
+  <button type="submit" formaction="/override_action.php">Submit to Alternate URL</button>
+  
+  <!-- Formmethod Override -->
+  <button type="submit" formmethod="get">Submit using GET</button>
+  
+  <!-- Formnovalidate Override -->
+  <button type="submit" formnovalidate>Submit without Validation</button>
+  
+  <!-- Formtarget Override -->
+  <button type="submit" formtarget="_blank">Submit to New Tab</button>
+</form>
+    
+</body>
+</html>
