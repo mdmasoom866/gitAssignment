@@ -5,20 +5,20 @@ print("Name:", name)
 
 Ans:2
 student_name = "Aman"
-print("Student Name:", Student_name)
+print("Student Name:", student_name)
 
 
 Ans:3
-student name = "Rahul"
-print("Student Name:", student name)
+student_name = "Rahul"
+print("Student Name:", student_name)
 
 Ans:4
-1student_name = "Ravi"
-print("Student Name:", 1student_name)
+student_name = "Ravi"
+print("Student Name:", student_name)
 
 Ans:5
-student-name = "Rohan"
-print("Student Name:", student-name)
+student_name = "Rohan"
+print("Student Name:", student_name)
 
 Ans:6
 student_name = "Neha"
@@ -53,7 +53,7 @@ college_name = "ABC College"
 student_name = "Meera"
 
 print("College:", college_name)
-print("Student:", student_Name)
+print("Student:", student_name)
 
 Ans:11
 first_name = "Raj"
