@@ -130,7 +130,6 @@ print("0" < "9")
 print(chr(9731))
 print(chr(9829))
 print(chr(8377))
-[09:38, 23/09/2026] Ayush Cg: # question - 19
 
 text = "PYTHON"
 print(text[0])
@@ -180,7 +179,7 @@ word[-1]
 #M
 word[-4]
 #G
-[09:39, 23/09/2026] Ayush Cg: #question - 24
+
 
 text = "PYTHON"
 print(text[0:3])
@@ -247,7 +246,6 @@ text = "BTECH-CSE-2026"
 print(text[:5])
 print(text[6:9])
 print(text[10:])
-[09:39, 23/09/2026] Ayush Cg: #question - 33
 text = "Python is easy"
 
 print(text.split())
@@ -309,7 +307,6 @@ print("Domain:",domain)
 first,second,third,last=input("enter sentence").split()
 print("first word",first)
 print("Last word",last)
-[09:40, 23/09/2026] Ayush Cg: #question - 42
 print("\nhello\nworld")
 
 
