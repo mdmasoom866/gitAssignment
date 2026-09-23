@@ -106,7 +106,7 @@ print(ord('b'))
 letter=input("ENter a character :")
 print(ord('letter'))
 
-[09:38, 23/09/2026] Ayush Cg: # question - 16
+#ques -17
 letter = input("enter letter: ")
 next_letter = ord(letter)+ 1
 next_letter = chr(next_letter)
