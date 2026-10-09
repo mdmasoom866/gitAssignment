@@ -336,3 +336,270 @@ let N = 10;
 let M = 0;
 let $result = a ** b;
 console.log($result);
+
+
+// assignment - (=)
+// Ques -1
+//   Store a student’s name as "Priya" and marks as 92 using the assignment operator.
+
+let Name;
+Name = priya ;
+console.log(Name)
+
+// Ques - 2 
+// Create a variable score and assign it the value 0.
+let value ;
+value = 0;
+console.log(value)
+
+
+// Ques -- 3
+// Assign the value 50 to three variables a, b and c using a single chained assignment.
+let A,b,c;
+A,b,c = 50;
+console.log(A,B,c)
+
+
+
+//  Ques - 4 
+let x;
+x = 100;
+console.log(x);
+// output will be 100
+
+// Ques - 5
+let p = 15;
+let q = p;
+q = 30;
+console.log(p, q);
+
+
+
+//  And and assign (+=)
+
+// Ques - 1
+// A player’s score is 80. He scores 25 more points. Update the score using +=.
+let scoreOfPlayer = 80;
+scoreOfPlayer += 25;
+console.log(scoreOfPlayer)
+
+// ques - 2
+// A wallet has ₹1500. Cashback of ₹120 is added. Update the balance using +=.
+let wallet = 1500;
+wallet +=120;
+console.log(wallet)
+
+
+// ques - 3
+let count = 10;
+count += 5;
+console.log(count);
+// output will be 15
+
+
+
+// ques - 4 
+// let msg = "Good";
+msg += " Morning";
+console.log(msg);
+
+// output will be Good morning 
+
+// ques - 5 
+// What is the final value after let n = 20; n += "5";? Explain.
+let n = 20 ;
+n += 5;
+console.log(n)
+// output wil bw 205 because in addition the string seems as string .
+
+
+//. subtraction and assign (-=)
+// ques - 1
+// Health is 100. Player takes 35 damage. Update health using -=.
+ 
+let health = 100 ;
+health -= 35;
+console.log(health)
+
+// ques - 2
+// Stock of 300 items is reduced by 45 after a sale. Update using -=.
+let stock = 300 ;
+stock -= 45;
+console.log(stock)
+
+// ques - 3
+let lives = 5;
+lives -= 2;
+console.log(lives);
+
+// output will be 3
+
+//ques - 4
+let num = "40";
+num -= 15;
+console.log(num);
+
+// ques - 5
+// What is the result of let x = "abc"; x -= 5;? Explain.
+//result of this code will be NaN not a number because abc is not a number and js take the code in  number 
+
+// Multiply and asiign (*=)
+
+// ques - 1 
+//Price of an item is ₹500. Apply 18% GST using *= 1.18.
+let price =500;
+price *= 1.18
+console.log(price)
+
+// ques - 2
+// A quantity of 8 is tripled. Update using *=.
+let quantity = 8;
+quantity *= 3;
+console.log(quantity)
+
+// ques - 3 
+let amount = 200;
+amount *= 1.1;
+console.log(amount);
+
+// ques - 4 
+let val = "7";
+val *= 3;
+console.log(val);
+// output will be 21 
+
+// ques - 5
+// What is the result of let y = "hello"; y *= 2;? Explain.
+// output will be NaN 
+
+
+// divide and assign (/=)
+//ques - 1
+// Total of 180 chocolates is shared among 6 children. Update using /=.
+let chocolate = 180;
+chocolate /= 6;
+console.log(chocolate)
+
+// ques -2 
+// Distance of 300 km is covered in 5 hours. Find average speed using /=.
+let distance = 300;
+distance /= 5;
+console.log(distance)
+
+
+// ques - 3
+let total = 400;
+total /= 8;
+console.log(total);
+// output is 50 
+
+// ques -4 
+let num = "100";
+num /= 4;
+console.log(num);
+// output will be 25.
+
+// ques - 5
+// What is the result of let z = 50; z /= 0;? Explain.
+ // output will be infinity
+
+
+
+ // modulus and assign (%=)
+
+ // ques - 1
+ // Number 47 is divided by 6. Store only the remainder using %=.
+let number = 47 ;
+number %= 6;
+console.log(number )
+
+// ques - 2
+// Counter is at 23. Keep only the remainder when divided by 12 using %=.
+let counter = 23 ;
+counter %= 12 ;
+console.log(counter)
+
+// ques - 3
+let num = 29;
+num %= 5;
+console.log(num);
+
+// out put will be 4 
+
+// ques - 4
+let x = "17";
+x %= 3;
+console.log(x);
+// output will be 2 
+
+// ques - 5
+// What is the result of let m = 15; m %= 0;? Explain.
+let m = 15 ;
+m %= 0;
+console.log(m)
+
+// output will be infinity 
+
+// Exponential and assign (**=)
+// ques - 1
+// Side of a cube is 5. Update it to get the volume using **= 3.
+let side = 5;
+side **= 3;
+console.log(side)
+
+
+// ques - 2 
+// Number 4 needs to be squared. Use **= 2.
+let number = 4 ;
+number **= 2 ;
+console.log(number)
+
+
+// ques - 3 
+let base = 2;
+base **= 5;
+console.log(base);
+// output will be 32 
+
+// ques - 4
+let s = 4;
+s **= 0.5;
+console.log(s);
+// ouptput will be 2 
+
+// ques - 5
+// What is the result of let p = 2; p **= -1;? Explain.
+// the output will be 0.5
+
+
+// Comparision operator ( == )
+// ques - 1
+// Check whether the string "25" is loosely equal to the number 25.
+// yes the number is loodely equal to 25.
+
+// ques - 2
+// Check if 0 == false returns true or false.
+console.log(0==false)
+
+// ques - 3
+console.log(10 == "10");
+console.log(null == undefined);
+// first is true and second is false. 
+
+// ques - 4
+console.log("" == 0);
+console.log([] == false);
+
+
+// ques - 5
+// Why does NaN == NaN return false?
+//out is true
+
+
+// loose and inequalty(!=)
+// ques - 1
+// Check whether "18" != 18 returns true or false.
+console.log("18"!=18)
+
+// ques -2 
+// A password is stored as "1234". User enters 1234 (number). Will != return true?
