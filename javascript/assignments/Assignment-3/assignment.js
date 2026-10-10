@@ -355,14 +355,14 @@ console.log(value)
 
 // Ques -- 3
 // Assign the value 50 to three variables a, b and c using a single chained assignment.
-let A,b,c;
+//let A,b,c;
 A,b,c = 50;
 console.log(A,B,c)
 
 
 
 //  Ques - 4 
-let x;
+//let x;
 x = 100;
 console.log(x);
 // output will be 100
@@ -488,13 +488,13 @@ console.log(distance)
 
 
 // ques - 3
-let total = 400;
+//let total = 400;
 total /= 8;
 console.log(total);
 // output is 50 
 
 // ques -4 
-let num = "100";
+//let num = "100";
 num /= 4;
 console.log(num);
 // output will be 25.
@@ -520,14 +520,14 @@ counter %= 12 ;
 console.log(counter)
 
 // ques - 3
-let num = 29;
+//let num = 29;
 num %= 5;
 console.log(num);
 
 // out put will be 4 
 
 // ques - 4
-let x = "17";
+//let x = "17";
 x %= 3;
 console.log(x);
 // output will be 2 
@@ -550,13 +550,13 @@ console.log(side)
 
 // ques - 2 
 // Number 4 needs to be squared. Use **= 2.
-let number = 4 ;
+//let number = 4 ;
 number **= 2 ;
 console.log(number)
 
 
 // ques - 3 
-let base = 2;
+//let base = 2;
 base **= 5;
 console.log(base);
 // output will be 32 
@@ -603,3 +603,61 @@ console.log("18"!=18)
 
 // ques -2 
 // A password is stored as "1234". User enters 1234 (number). Will != return true?
+console.log("1234"!=1234) //false
+
+// ques - 3
+
+console.log(5 != "5"); //false
+console.log(0 != false); //false
+
+// ques - 4
+console.log(null != undefined); //true
+console.log("" != 0); //false
+
+
+// ques - 5
+console.log(NaN != NaN) //true
+
+
+// strict eguality
+
+// ques -1 
+console.log("25" === 25)//false
+
+// ques - 2
+
+console.log(0 === false)//false
+console.log(null === undefined)//false
+
+// ques - 3
+console.log(10 === "10");//false
+console.log(true === 1);//false
+
+
+//ques - 4
+console.log("" === 0);//false
+// console.log([] === false);   false
+
+// ques - 5
+// Why is === preferred over == in most real-world code?
+// Because it also check the data type 
+
+// strict inequality
+// ques - 1
+console.log("18" !== 18)//true
+
+//ques - 2
+console.log(0 !== false)//true
+console.log(null !== undefined)//true
+
+// ques - 3
+console.log(5 !== "5");//true
+console.log(true !== 1);//true
+
+// ques - 4
+console.log("" !== 0);//true
+console.log(NaN !== NaN);//true
+
+// ques - 5
+//let num;
+console.log(num!==0)
