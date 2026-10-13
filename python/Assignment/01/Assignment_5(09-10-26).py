@@ -211,4 +211,17 @@ print(count)
 # Count how many digits of a given integer are even.
 
 
+# Ques - 27
+# Find the sum of only the even digits of a number.
+# num = int(input("enter a number :"))
+# sum=sum+0
+# for num in range(1,num+1):
+#     if num%2==0:
+#         sum=sum+0
+# print(sum)        
+
+
+#  Ques - 28
+# Find the largest digit of a number using one for loop. Do not use max() and do not convert the number to a string.
+
 
