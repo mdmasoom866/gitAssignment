@@ -916,3 +916,141 @@ console.log(m, n);
 // let val = 0;
 // val = val++ + ++val;
 // console.log(val);
+
+// LOGICAL OPERATOR :-
+
+// QUES - 1
+//  Stored username is "admin" and password is 1234. Check if both are valid using && and print the result.
+// let storedName = "admin";
+// let password = 1234 ;
+// let valid = storedName && password
+// console.log("Is valid user ?", valid)
+
+
+// ques  - 2 
+// A user is logged in (isLoggedIn = true) and has permission (hasPermission = true). Check if they can access a page using &&.
+// let isLoggedIn = true;
+// let hasPermission = true;
+// let check = isLoggedIn && hasPermission
+// console.log("is able to access the page ?", check)
+
+
+// ques - 3
+// A product is in stock (inStock = true) and its price is less than ₹1000 (price = 800). Check if it can be bought using &&.
+// let stock= true ;
+// let price = 800 ;
+// let canBought = price<1000 && stock ;
+// console.log("can bought the stock ?", canBought)
+
+// ques - 4
+// A student has marks 75 and attendance 80. Passing requires marks greater than 65 and attendance greater than 70. Check using &&.
+// let marks = 75 ;
+// let attendance = 80 ;
+// let passing = marks>=65 && attendance>=70;
+// console.log(passing)
+
+// ques - 5
+// Two conditions: isWeekend = true and isHoliday = false. A party happens only if both are true. Check using &&.
+// let isWeekend= true ;
+// let isHoliday = false;
+// let isParty = isWeekend && isHoliday ;
+// console.log("IS Party ?" , isParty) 
+
+// ques - 6 
+// let a = 0;
+// let b = 10;
+// let result = a && b;
+// console.log(result); /// false
+
+// ques -7
+// let x = 5;
+// let y = 10;
+// let result = (x > 3 && y) || 0;
+// console.log(result); // true
+
+// quees -8
+// let p = "Hello";
+// let q = "";
+// let r = "World";
+// let result = p && q && r;
+// console.log(result); //world
+
+// ques - 9
+// let val = 5;
+// let condition = val && (val = 0);
+// console.log(condition);  // false
+// console.log(val);       // 5
+
+// ques - 10 
+// let x = 10;
+// let y = 20;
+// let result = (x && y) && (x > y);
+// console.log(result);  // false
+
+// 2. LOGICAL OR || 
+
+// ques - 1
+// A user can login with either a correct password (passwordCorrect = true) or a valid OTP (otpValid = false). Check if login is allowed using ||.
+// let correctPassword = true ; 
+// let otpValid = false ;
+// let login = correctPassword || otpValid
+// console.log("is login or not ?",login)
+
+// ques - 2
+// A discount applies if the user is a member (isMember = false) or has a coupon (hasCoupon = true). Check using ||.
+// let isMember = true ;
+// let hasCoupon = true ;
+// let discountApplies = isMember || hasCoupon ;
+// console.log(" is discountApplies ?",discountApplies)
+
+// ques - 3
+// Entry is allowed if age is above 18 (age = 16) or height is above 150 cm (height = 155). Check using ||.
+// let age = 16 ;
+// let height = 150 ;
+// let allowed = age>=18 || height>=155 ;
+// console.log("is alowed ?",allowed)
+
+// ques - 4
+// A form is valid if either email is given (emailGiven = true) or phone is given (phoneGiven = false). Check using ||.
+// let emailGiven = true ;
+// let phoneIsGiven = false ;
+// let valid = emailGiven || phoneIsGiven ;
+// console.log("is valid ?",valid)
+
+// ques - 5
+// A game level opens if score is above 1000 (score = 900) or time bonus is collected (timeBonus = true). Check using ||.
+// let score = 900 ;
+// let timeBonus = true ;
+// let gameLevel = score>1000 || timeBonus ;
+// console.log("game level ?",gameLevel)
+
+
+// ques - 6
+// let a = 0;
+// let b = false;
+// let c = "";
+// let d = null;
+// let e = 42;
+// let result = a || b || c || d || e;
+// console.log(result); // e=true <42>
+
+// ques - 7 
+// let x = "Hello" || 0;
+// let y = 0 || "Hi";
+// console.log(x, y); // (HEllO,HI)
+
+// ques - 8
+// let a = 10;
+// let b = 20;
+// let result = (a < 5) || (b > 15);
+// console.log(result); // 20
+
+// ques - 9
+// let val = 5;
+// let condition = val || (val = 0);
+// console.log(condition); // 5
+// console.log(val); // 5 
+
+// ques - 10
+// let x = "" || 0 || false || null || undefined || "OK";
+// console.log(x); // ok
