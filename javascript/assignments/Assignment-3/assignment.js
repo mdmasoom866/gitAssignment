@@ -837,10 +837,10 @@
 
 // 5.Declare count = 0. Increment it twice and print the final value.
 
-let count= 0;
-count++;
-count++;
-console.log(count)
+// let count= 0;
+// count++;
+// count++;
+// console.log(count)
 
 
 // b. 
@@ -850,9 +850,9 @@ console.log(count)
 // Print both x and y.
 // Explain why the values are different.
 
-let x = 5
-let y = x++
-console.log(x,y)
+// let x = 5
+// let y = x++
+// console.log(x,y)
 // the values of x and y are different becaue we have done the post inreament in x 
 
 // 7 
@@ -861,10 +861,6 @@ console.log(x,y)
 // Print both a and b.
 // Explain the difference from the previous question.
 
-let a = 5 
-let b = ++a ;
-console.log(a,b)
-
 // =>here this one different from previous ques because this is case of prefix increament . 
 // her we got the a = 6 and b = 6
 
@@ -872,28 +868,28 @@ console.log(a,b)
 // Start with lives = 3.
 // Use post-decrement (lives--) and store the result in previousLives.
 // Print both variables.
-let lives=3
-let previousLives=lives--
-console.log("Remaining lives ",lives)
-console.log("Previous lives ",previousLives)
+// let lives=3
+// let previousLives=lives--
+// console.log("Remaining lives ",lives)
+// console.log("Previous lives ",previousLives)
 
-// 9 .
-let attempts=0
-let currentAttempts=++attempts
-console.log("Total attempts ",attempts)
-console.log("Current attempts ",currentAttempts)
+// // 9 .
+// let attempts=0
+// let currentAttempts=++attempts
+// console.log("Total attempts ",attempts)
+// console.log("Current attempts ",currentAttempts)
 
-// 10.
-let points=100
-points++
-points--
-console.log("Final points ",points)
+// // 10.
+// let points=100
+// points++
+// points--
+// console.log("Final points ",points)
 
-// 11. 
-let x = 10;
-let y = x++;
-let z = ++x;
-console.log(x, y, z);//12,10,12
+// // 11. 
+// let x = 10;
+// let y = x++;
+// let z = ++x;
+// console.log(x, y, z);//12,10,12
 
 // 12 . 
 // let a = 5;
@@ -1054,3 +1050,279 @@ console.log(m, n);
 // ques - 10
 // let x = "" || 0 || false || null || undefined || "OK";
 // console.log(x); // ok
+
+// LOGICAL NOT(!)
+
+// ques- 1
+// A user is not banned (isBanned = false). Check if they can login by negating isBanned using !.
+// let isBanned = false ;
+// let notBanned = !isBanned ;
+// console.log("able to login?",notBanned)
+
+// ques- 2
+// A task is not completed (isCompleted = false). Check if it is still pending using !.
+// let isCompleted = false ;
+// let isPending = !isCompleted ;
+// console.log("is pending ?",isPending)
+
+// ques- 3
+// A light is on (isOn = true). Check if it is off using !.
+// let isOn = true ;
+// let isOff = !isOn ;
+// console.log("is on ?",isOff)
+
+// ques- 4
+// A subscription is not active (isActive = false). Check if the user cannot access premium content using !.
+// let isActive = false ;
+// let canAcessPremium = !isActive;
+// console.log("can access premium ?",canAcessPremium)
+
+// ques- 5
+// A file is not read‑only (isReadOnly = false). Check if it can be edited using !
+// let isReadonly = false ;
+// let canEdit = !isReadonly
+// console.log("can edit ?",canEdit)
+
+//ques- 6
+// let a = 0;
+// let b = 1;
+// console.log(!a, !b); true,false
+
+//ques - 7
+// let x = "Hello";
+// let y = "";
+// console.log(!x, !y); false,true
+
+// ques- 8
+// let val = 5;
+// let result = !val;
+// console.log(result); false
+
+//ques- 9
+// let a = 10;
+// let b = 20;
+// let result = !(a && b); false
+// console.log(result); false
+
+//ques- 10
+// let x = 0;
+// let y = 1;
+// let result = !(x || y); 
+// console.log(result); false
+
+
+// typeof OPERATOR
+
+//ques- 1
+// Declare a variable name = "Rahul" and print its type using typeof.
+// let name = "name"
+// console.log(typeof(name))
+
+// ques- 2
+// Declare a variable age = 25 and print its type.
+// let age = 25;
+// console.log(typeof(age));
+
+//ques- 3
+// Declare a variable isStudent = true and print its type.
+// let isStudent = true;
+// console.log(typeof(isStudent))
+
+//ques-4 
+// Declare a variable city (without assigning a value) and print its type.
+// let city="" ;
+// console.log(typeof(city))
+
+//ques- 5
+// Print the type of the value null.
+// console.log(typeof(null)) // object
+
+
+// ques- 6
+// console.log(typeof 42);  //number
+// console.log(typeof "Hello"); // string
+// console.log(typeof true); // boolean
+// console.log(typeof undefined); // undefined
+
+//ques- 7
+// console.log(typeof NaN); //number
+// console.log(typeof Infinity); //number
+// console.log(typeof function(){});  // function
+
+
+// ques -8
+// console.log(typeof null); //object
+// console.log(typeof {}); //object
+// console.log(typeof []); // object
+
+// ques- 9
+// price = 99.99
+// message = "Welcome"
+// isActive = false
+// console.log(typeof(price)) // number
+// console.log(typeof(message)) // string
+// console.log(typeof(isActive)) //boolean
+
+// ques- 10
+// let value = null;
+// console.log(typeof value); // object 
+// console.log(typeof value === "object"); 
+
+//ques- 11
+// console.log(typeof typeof 100); number
+// console.log(typeof typeof "Hi"); String
+// console.log(typeof typeof true); bollean
+
+//quse-12
+// let a = 10;
+// let b = "10";
+// console.log(typeof a === typeof b); false
+// console.log(typeof a == typeof b); true
+
+//ques- 13
+// console.log(typeof null === "object"); true
+// console.log(typeof [] === "object"); true
+// console.log(typeof {} === "object"); true
+
+//ques-14
+// let x;
+// console.log(typeof x); // undefined
+// x = null;
+// console.log(typeof x); // object
+// x = 0;
+// console.log(typeof x); //number
+
+//ques- 15
+// console.log(typeof NaN === "number"); true
+// console.log(typeof Infinity === "number"); true
+// console.log(typeof (1 / 0)); Number
+
+
+// TYPE COERCION
+//ques- 1
+// Convert the string "25" into a number using Number() and add 10 to it. Print the result.
+// let x ="25";
+// console.log(x+10)
+
+//ques- 2
+// Convert the number 100 into a string using String() and join it with " rupees". Print the result.
+// let x = 100 ;
+// console.log(`string(x)+(rs)`)
+
+//ques- 3
+// Convert the value 0 into a boolean using Boolean() and print it.
+// let x =0;
+// console.log(Boolean(x))
+
+//ques- 4
+// Convert the value "Hello" into a boolean and print it
+// let name="Hello" ;
+// console.log(Boolean(name))
+
+//ques- 5
+// Use the unary + operator to convert "50" into a number and multiply it by 2.
+// let num = "50";
+// console.log(`${Boolean(num)}*2`)
+
+//ques- 6
+// console.log("10" - 5); //5
+// console.log("10" + 5); // 105
+// console.log("10" * 2); //20
+// console.log("10" / 2);  //5
+
+//ques- 7
+// console.log("5" - "2"); //3
+// console.log("5" + "2"); //52
+// console.log("5" * "2"); //10
+// console.log("5" / "2"); //2.5
+
+//ques- 8
+// console.log(Number("123")); // 123
+// console.log(Number("123abc")); //123abs
+// console.log(Number(true)); // 1
+// console.log(Number(false)); //0
+// console.log(Number(null)); // 0
+// console.log(Number(undefined)); // undefined
+
+//ques- 9
+// console.log(Boolean(0)); //false
+// console.log(Boolean("")); //false
+// console.log(Boolean("0")); // true
+// console.log(Boolean([])); // false
+// console.log(Boolean({})); // false
+// console.log(Boolean(null)); // true
+
+//ques-10
+// console.log(String(100)); //100
+// console.log(String(true)); //true
+// console.log(String(null)); //null
+// console.log(String(undefined)); //undefined
+// console.log(100 + ""); //100
+
+//part c :
+ //ques- 11
+//  console.log("5" + 3 + 2); // 55
+// console.log(5 + 3 + "2"); //82
+// console.log("5" - 3 + 2); // 0
+// console.log(5 - "3" + "2"); //-27
+
+// ques- 12
+// console.log(true + true); // 2
+// console.log(true + false); // 1
+// console.log(true + "false"); //truefalse
+// console.log(false + "true"); // falsetrue
+
+// ques -13
+// console.log(null + 5); // 5
+// console.log(undefined + 5); // undefined
+// console.log(null + "5"); // 5
+// console.log(undefined + "5"); // undefined5
+
+// ques - 14
+// console.log([] + []); // objectobject
+// console.log([] + {}); // objectobject
+// console.log({} + []); // objectobject
+// console.log({} + {}); // objectpbject
+
+// ques-15
+// let a = "10";
+// let b = 5;
+// let c = a + b;
+// let d = a - b;
+// let e = +a + b;
+// console.log(c, typeof c); // 105 , string
+// console.log(d, typeof d); // 5, number
+// console.log(e, typeof e); // 105 , string
+
+// ques- 16
+// console.log(!!"Hello"); true
+// console.log(!!""); false
+// console.log(!!0); false
+// console.log(!!1); true
+// console.log(!!null); false
+// console.log(!!undefined); false
+
+// ques- 17
+// console.log(Number("")); 
+// console.log(Number(" "));
+// console.log(Number("0")); 0 
+// console.log(Number("  25  ")); 25
+// console.log(Number("25px")); 25px
+
+//ques- 18
+// let val1 = "5";
+// let val2 = 2;
+// console.log(val1 + val2); // 52
+// console.log(+val1 + val2); // 52
+// console.log(val1 - val2); // 3
+// console.log(val1 * val2); // 10
+// console.log(val1 / val2); // 2.5
+
+// BONUS MIXED PRACTICE QUESTION  :-
+
+//ques- 19
+let count = 5;
+console.log(typeof count++);
+console.log(count);
+console.log(typeof ++count);
+console.log(count);
