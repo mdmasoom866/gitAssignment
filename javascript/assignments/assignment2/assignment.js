@@ -51,16 +51,16 @@ console.log(schoolname)
 // Print the entire object and then print each property individually.
 
 
-let student={
-    name : "Riya",
-    age : 18,
-    isEnrolled : true
-}
+// let student={
+//     name : "Riya",
+//     age : 18,
+//     isEnrolled : true
+// }
 
-console.log(student)
-console.log(student.name)
-console.log(student.age)
-console.log(student.isEnrolled)
+// console.log(student)
+// console.log(student.name)
+// console.log(student.age)
+// console.log(student.isEnrolled)
 
 // 2. Work with Arrays
 // Create two arrays:
@@ -69,16 +69,16 @@ console.log(student.isEnrolled)
 // mixedData containing different types: a number, a string, a boolean, and null
 // Print both arrays. Also print the first and last element of the scores array using index.
 
-let scores=[85,92,78,90]
-let mixedData=[10,"Messi",true,null]
+// let scores=[85,92,78,90]
+// let mixedData=[10,"Messi",true,null]
 
-console.log(scores)
-console.log(mixedData)
-
-co…
+// console.log(scores)
+// console.log(mixedData)
 
 
-[09:22, 03/10/2026] Aashish Cg: // 5. Valid vs Invalid Variable Names
+
+
+// [09:22, 03/10/2026] Aashish Cg: // 5. Valid vs Invalid Variable Names
 // Identify which of the following variable names are valid and which are invalid. For invalid ones, explain why.
 
 let userName;
@@ -107,8 +107,8 @@ const b = 100;
 // Write code that demonstrates:
 
 // Declaring a variable without assigning a value, th…
-[09:22, 03/10/2026] Aashish Cg: i
-[09:22, 03/10/2026] Aashish Cg: // 8. Predict the Output
+// [09:22, 03/10/2026] Aashish Cg: i
+// [09:22, 03/10/2026] Aashish Cg: // 8. Predict the Output
 // Without running the code, predict what each console.log will print. Explain your reasoning (especially for typeof).
 
 // let person = { name: "Amit", age: 22 };
@@ -126,15 +126,15 @@ const b = 100;
 // console.log(colors[1]);
 // console.log(sayHi());
 
-let person = { name: "Amit", age: 22 };
-let colors = ["red", "green", "blue"];
-function sayHi() {
-  return "Hi!";
-}
-let empty = null;
+// let person = { name: "Amit", age: 22 };
+// let colors = ["red", "green", "blue"];
+// function sayHi() {
+//   return "Hi!";
+// }
+// let empty = null;
 
-console.log(typeof(person)); //object
-console.log(typeof(colors)); //object
-console.log(typeof(sayHi));  //function
-console.log(typ…
-[09:22, 03/10/2026] Aashish Cg: j
+// console.log(typeof(person)); //object
+// console.log(typeof(colors)); //object
+// console.log(typeof(sayHi));  //function
+// console.log(typ…
+// [09:22, 03/10/2026] Aashish Cg: j
