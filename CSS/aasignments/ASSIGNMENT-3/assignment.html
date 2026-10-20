@@ -1,14 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        
-    </style>
+<meta charset="UTF-8">
+<title>Sudoku Grid</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+
+  .sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(9, 40px);
+    border: 3px solid #000;
+    background-color: #000;
+    gap: 1px;
+  }
+
+  .cell {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    user-select: none;
+  }
+
+  .cell.green {
+    background-color: #a3d9b1;
+  }
+
+  /* Add thicker borders to separate 3x3 subgrids */
+  .cell:nth-child(3n) {
+    border-right: 2px solid #000;
+  }
+  
+  /* Reset the last column border */
+  .cell:nth-child(9n) {
+    border-right: none;
+  }
+
+  .sudoku-grid > div:nth-child(n+19):nth-child(-n+27),
+  .sudoku-grid > div:nth-child(n+46):nth-child(-n+54) {
+    /* Row borders handled by gap/grid or custom classes if preferred */
+  }
+</style>
 </head>
 <body>
-    
+
+<div class="sudoku-grid">
+  <!-- Row 1 -->
+  <div class="cell">8</div>
+  <div class="cell">7</div>
+  <div class="cell">6</div>
+  <div class="cell green">5</div>
+  <div class="cell green">4</div>
+  <div class="cell green">3</div>
+  <div class="cell">1</div>
+  <div class="cell">9</div>
+  <div class="cell">2</div>
+
+  <!-- Row 2 -->
+  <div class="cell">5</div>
+  <div class="cell">4</div>
+  <div class="cell">3</div>
+  <div class="cell green">2</div>
+  <div class="cell green">1</div>
+  <div class="cell green">9</div>
+  <div class="cell">7</div>
+  <div class="cell">6</div>
+  <div class="cell">8</div>
+
+  <!-- Row 3 -->
+  <div class="cell">2</div>
+  <div class="cell">1</div>
+  <div class="cell">9</div>
+  <div class="cell green">8</div>
+  <div class="cell green">7</div>
+  <div class="cell green">6</div>
+  <div class="cell">4</div>
+  <div class="cell">3</div>
+  <div class="cell">5</div>
+
+  <!-- Row 4 -->
+  <div class="cell green">1</div>
+  <div class="cell green">9</div>
+  <div class="cell green">8</div>
+  <div class="cell">7</div>
+  <div class="cell">6</div>
+  <div class="cell">5</div>
+  <div class="cell green">3</div>
+  <div class="cell green">2</div>
+  <div class="cell green">4</div>
+
+  <!-- Row 5 -->
+  <div class="cell green">4</div>
+  <div class="cell green">3</div>
+  <div class="cell green">2</div>
+  <div class="cell">1</div>
+  <div class="cell">9</div>
+  <div class="cell">8</div>
+  <div class="cell green">6</div>
+  <div class="cell green">5</div>
+  <div class="cell green">7</div>
+
+  <!-- Row 6 -->
+  <div class="cell green">7</div>
+  <div class="cell green">6</div>
+  <div class="cell green">5</div>
+  <div class="cell">4</div>
+  <div class="cell">3</div>
+  <div class="cell">2</div>
+  <div class="cell green">9</div>
+  <div class="cell green">8</div>
+  <div class="cell green">1</div>
+
+  <!-- Row 7 -->
+  <div class="cell">3</div>
+  <div class="cell">2</div>
+  <div class="cell">1</div>
+  <div class="cell green">9</div>
+  <div class="cell green">8</div>
+  <div class="cell green">7</div>
+  <div class="cell">5</div>
+  <div class="cell">4</div>
+  <div class="cell">6</div>
+
+  <!-- Row 8 -->
+  <div class="cell">6</div>
+  <div class="cell">5</div>
+  <div class="cell">4</div>
+  <div class="cell green">3</div>
+  <div class="cell green">2</div>
+  <div class="cell green">1</div>
+  <div class="cell">8</div>
+  <div class="cell">7</div>
+  <div class="cell">9</div>
+
+  <!-- Row 9 -->
+  <div class="cell">9</div>
+  <div class="cell">8</div>
+  <div class="cell">7</div>
+  <div class="cell green">6</div>
+  <div class="cell green">5</div>
+  <div class="cell green">4</div>
+  <div class="cell">2</div>
+  <div class="cell">1</div>
+  <div class="cell">3</div>
+</div>
+
 </body>
 </html>

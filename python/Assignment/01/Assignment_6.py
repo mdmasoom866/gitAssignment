@@ -48,11 +48,11 @@
 #     print()    
 
 # ques 8
-num= 5
-for i in range(1,num+1):
-    for j in range(0,i):
-        print(i+(j), end=" ")
-    print()     
+# num= 5
+# for i in range(1,num+1):
+#     for j in range(0,i):
+#         print(i+(j), end=" ")
+#     print()     
 
 # # ques 9
 # num=5
@@ -295,3 +295,10 @@ for i in range(1,num+1):
 
 
 # # ques 31
+# num = 4;
+# for i in range(1,num+1):
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     for k in range(1,i):
+#         print(reversed(k),end=" ")
+#     print()
