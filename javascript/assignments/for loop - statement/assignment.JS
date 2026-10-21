@@ -72,3 +72,69 @@ for(i=1; i<=8; i++){
     ticket+=150;
 }
 
+
+//  part -B ] for loop (additional advance questions)
+
+//  Given an array of temperatures [28, 32, 25, 40, 18, 35], use a for loop to count how many days were hotter than 30°C.
+// let arr = [28,32,25,40,18,35];
+// let count = 0;
+// for(i=0; i<=arr.length-1; i++ ){
+//     if(arr[i]>30){
+//         count+=1;
+//     }
+// }console.log(count)
+
+// Write a for loop that calculates the sum of all digits of a given number (example: 4729 → 4+7+2+9 = 22).
+// let num = "4729";
+// let summ = 0
+// for(i=0; i<=num.length-1; i++){
+//     summ+=Number(num[i]);
+// }console.log(summ)
+
+// Create a for loop that prints only the numbers between 1 and 100 that are divisible by both 3 and 5, but not by 7.
+// for(i=1; i<=100; i++){
+//     if(i%3==0 && i%5==0 && i%7!=0){
+//         console.log(i)
+//     }
+// }
+
+// Given the string "JavaScript", use a for loop to create a new string that contains only the consonants (remove vowels).
+// let str = "javascript" ;
+// let newString = "" ;
+// for(i=0; i<=str.length[i]; i++){
+//     if(str[i]=="a" || str[i]=="e" || str[i]=="i"|| str[i]=="o"||str[i]=="u"){
+//         continue;
+//     }
+//    console.log(srt[i])
+// }
+
+// Write a for loop that finds the largest number in an array of positive integers without using any sorting method.
+
+let arr = [10,20,30,40];
+for(i=0; i<=arr.length-1; i++){
+    if(arr[0]>arr[1] && arr[0]>arr[2] && arr[0]>arr[3]){
+        console.log(arr[0])
+    }else if(arr[1]>arr[0] && arr[1]>arr[2] && arr[1]>arr[3]){
+        console.log(arrp[1])}
+    else if(arr[2]>arr[1] && arr[2]>arr[0] && arr[2]>arr[3]){
+        console.log(arrp[2]) }
+    else(arr[3]>arr[1] && arr[3]>arr[2] && arr[3]>arr[0])
+        {console.log(arr[3])}
+    }
+
+// Use a for loop to check whether a given number is a perfect number (a number equal to the sum of its proper divisors). Example: 28.
+
+
+
+
+
+// Print the following series using a single for loop:
+// 1 2 4 8 16 32 64 128
+// num = 1
+// for(i=1; i<=128; i*=2){
+//     console.log(i);
+    
+// }   
+
+
+// 

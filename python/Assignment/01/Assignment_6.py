@@ -302,3 +302,6 @@
 #     for k in range(1,i):
 #         print(reversed(k),end=" ")
 #     print()
+# for l in range()
+
+# ques 32
