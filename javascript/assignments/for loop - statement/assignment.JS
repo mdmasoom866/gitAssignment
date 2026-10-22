@@ -102,10 +102,10 @@ for(i=1; i<=8; i++){
 // let str = "javascript" ;
 // let newString = "" ;
 // for(i=0; i<=str.length[i]; i++){
-//     if(str[i]=="a" || str[i]=="e" || str[i]=="i"|| str[i]=="o"||str[i]=="u"){
-//         continue;
+//     if(str[i]!="a" && str[i]!="e" && str[i]!="i"&& str[i]!="o"&&str[i]!="u"){
+//         newString += str[i]
 //     }
-//    console.log(srt[i])
+//    console.log(newString)
 // }
 
 // Write a for loop that finds the largest number in an array of positive integers without using any sorting method.
