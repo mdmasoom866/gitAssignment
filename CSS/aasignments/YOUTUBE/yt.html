@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0f0f0f;
+            color: white;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        /* SIDEBAR */
+
+        .sidebar {
+            width: 260px;
+            height: 100vh;
+            background-color: #212121;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .logo-section {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            padding: 0 28px;
+            gap: 25px;
+        }
+
+        .menu-icon {
+            font-size: 21px;
+            color: #ddd;
+            cursor: pointer;
+        }
+
+        .youtube-logo {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .youtube-logo i {
+            color: red;
+            font-size: 34px;
+        }
+
+        .youtube-logo span {
+            font-size: 23px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .sidebar-menu {
+            padding: 15px 8px;
+        }
+
+        .menu-item {
+            height: 45px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            padding: 0 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .menu-item i {
+            width: 20px;
+            font-size: 20px;
+        }
+
+        .menu-item:hover {
+            background-color: #383838;
+        }
+
+        .menu-item.active {
+            background-color: #383838;
+            font-weight: 500;
+        }
+
+        .sidebar hr {
+            border: none;
+            border-top: 1px solid #444;
+            margin: 15px 0;
+        }
+
+        .sidebar h4 {
+            font-size: 14px;
+            color: #aaa;
+            padding: 15px 20px;
+        }
+
+        .subscription {
+            height: 47px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 0 18px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .subscription:hover {
+            background-color: #383838;
+        }
+
+        .subscription img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .subscription span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .subscription i {
+            font-size: 6px;
+            color: #3ea6ff;
+            margin-left: auto;
+        }
+
+
+        /* MAIN CONTENT */
+
+        .main-content {
+            margin-left: 260px;
+            width: calc(100% - 260px);
+        }
+
+
+        /* NAVBAR */
+
+        .navbar {
+            height: 65px;
+            background-color: #0f0f0f;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 35px;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            border-bottom: 1px solid #272727;
+        }
+
+        .search-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 65%;
+        }
+
+        .search-box {
+            height: 48px;
+            display: flex;
+            flex: 1;
+            border: 1px solid #303030;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .search-box input {
+            width: 100%;
+            background-color: #121212;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 0 15px;
+            font-size: 16px;
+        }
+
+        .search-box input::placeholder {
+            color: #aaa;
+        }
+
+        .search-box button {
+            width: 75px;
+            background-color: #303030;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .mic-button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #272727;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .navbar-icons {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .profile {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+
+        /* CATEGORY BAR */
+
+        .category-section {
+            height: 64px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 25px;
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #0f0f0f;
+            border-bottom: 1px solid #272727;
+        }
+
+        .category-section::-webkit-scrollbar {
+            display: none;
+        }
+
+        .category {
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            background-color: #272727;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .category:hover {
+            background-color: #444;
+        }
+
+        .category.active-category {
+            background-color: white;
+            color: black;
+            border-color: white;
+        }
+
+
+        /* VIDEO GRID */
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 35px 18px;
+            padding: 25px 25px;
+        }
+
+        .video-card {
+            min-width: 0;
+            cursor: pointer;
+        }
+
+        .thumbnail {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            position: relative;
+            overflow: hidden;
+            background-color: #272727;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .video-card:hover .thumbnail img {
+            transform: scale(1.04);
+        }
+
+        .duration {
+            position: absolute;
+            bottom: 7px;
+            right: 7px;
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 3px 5px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+
+        .video-info {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+            position: relative;
+        }
+
+        .channel-img {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .video-details {
+            min-width: 0;
+            flex: 1;
+        }
+
+        .video-details h3 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 22px;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .video-details p {
+            font-size: 14px;
+            color: #aaa;
+            line-height: 20px;
+        }
+
+        .video-details p i {
+            font-size: 12px;
+        }
+
+        .more {
+            font-size: 16px;
+            padding: 5px;
+        }
+
+
+        /* RESPONSIVE LAPTOPS */
+
+        @media (max-width: 1400px) {
+            .video-container {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .sidebar {
+                width: 230px;
+            }
+
+            .main-content {
+                margin-left: 230px;
+                width: calc(100% - 230px);
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .video-container {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .sidebar {
+                width: 200px;
+            }
+
+            .main-content {
+                margin-left: 200px;
+                width: calc(100% - 200px);
+            }
+
+            .navbar {
+                padding: 0 15px;
+            }
+
+            .search-section {
+                width: 60%;
+            }
+
+            .navbar-icons {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .sidebar {
+                width: 70px;
+            }
+
+            .logo-section {
+                justify-content: center;
+                padding: 0;
+            }
+
+            .youtube-logo {
+                display: none;
+            }
+
+            .sidebar-menu {
+                padding: 10px 5px;
+            }
+
+            .menu-item {
+                justify-content: center;
+                padding: 0;
+            }
+
+            .menu-item span,
+            .sidebar h4,
+            .sidebar hr,
+            .subscription {
+                display: none;
+            }
+
+            .main-content {
+                margin-left: 70px;
+                width: calc(100% - 70px);
+            }
+
+            .video-container {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+
+            .search-section {
+                width: 75%;
+            }
+
+            .navbar-icons {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <i class="fa-solid fa-bars menu-icon"></i>
+
+            <div class="youtube-logo">
+                <i class="fa-brands fa-youtube"></i>
+                <span>YouTube</span>
+            </div>
+        </div>
+
+        <div class="sidebar-menu">
+
+            <div class="menu-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-compass"></i>
+                <span>Explore</span>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Shorts</span>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-clapperboard"></i>
+                <span>Subscriptions</span>
+            </div>
+
+            <hr>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-photo-film"></i>
+                <span>Library</span>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>History</span>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>Your videos</span>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Watch later</span>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-regular fa-thumbs-up"></i>
+                <span>Liked videos</span>
+            </div>
+
+            <div class="menu-item">
+                <i class="fa-solid fa-chevron-down"></i>
+                <span>Show more</span>
+            </div>
+
+            <hr>
+
+            <h4>SUBSCRIPTIONS</h4>
+
+            <div class="subscription">
+                <img src="https://i.pravatar.cc/40?img=12">
+                <span>Nadir On The Go</span>
+                <i class="fa-solid fa-circle"></i>
+            </div>
+
+            <div class="subscription">
+                <img src="https://i.pravatar.cc/40?img=13">
+                <span>Coke Studio Bangla</span>
+                <i class="fa-solid fa-circle"></i>
+            </div>
+
+            <div class="subscription">
+                <img src="https://i.pravatar.cc/40?img=14">
+                <span>MKBHD</span>
+            </div>
+
+            <div class="subscription">
+                <img src="https://i.pravatar.cc/40?img=15">
+                <span>Figma</span>
+                <i class="fa-solid fa-circle"></i>
+            </div>
+
+            <div class="subscription">
+                <img src="https://i.pravatar.cc/40?img=16">
+                <span>ATC Android ToTo</span>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP NAVBAR -->
+        <header class="navbar">
+
+            <div class="search-section">
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <button class="mic-button">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+
+            </div>
+
+            <div class="navbar-icons">
+
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-grip"></i>
+                <i class="fa-regular fa-bell"></i>
+
+                <img src="https://i.pravatar.cc/40?img=47" class="profile">
+
+            </div>
+
+        </header>
+
+
+        <!-- CATEGORY BAR -->
+        <div class="category-section">
+
+            <button class="category active-category">All</button>
+            <button class="category">Cook Studio</button>
+            <button class="category">UX</button>
+            <button class="category">Case Study</button>
+            <button class="category">Music</button>
+            <button class="category">Bangla Lofi</button>
+            <button class="category">Tour</button>
+            <button class="category">Saintmartin</button>
+            <button class="category">Tech</button>
+            <button class="category">iPhone 13</button>
+            <button class="category">User Interface Design</button>
+            <button class="category">Computer</button>
+
+        </div>
+
+
+        <!-- VIDEO GRID -->
+        <section class="video-container">
+
+
+            <!-- VIDEO 1 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600&h=340&fit=crop">
+
+                    <span class="duration">4:32</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=12">
+
+                    <div class="video-details">
+
+                        <h3>Bulbuli | Coke Studio Bangla | Season One</h3>
+
+                        <p>Coke Studio Bangla <i class="fa-solid fa-circle-check"></i></p>
+
+                        <p>1.5M views • 2 days ago</p>
+
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis-vertical more"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 2 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&h=340&fit=crop">
+
+                    <span class="duration">8:15</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=13">
+
+                    <div class="video-details">
+
+                        <h3>Infinix Note 12 AMOLED Helio G88 SoC!</h3>
+
+                        <p>ATC Android ToTo Company</p>
+
+                        <p>42M views • 2 days ago</p>
+
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis-vertical more"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 3 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=340&fit=crop">
+
+                    <span class="duration">12:40</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=14">
+
+                    <div class="video-details">
+
+                        <h3>My first UX Design case study - This got me my first job</h3>
+
+                        <p>Saptarshi Prakash</p>
+
+                        <p>4.8K views • 1 year ago</p>
+
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis-vertical more"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 4 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600&h=340&fit=crop">
+
+                    <span class="duration">5:21</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=15">
+
+                    <div class="video-details">
+
+                        <h3>My Mix</h3>
+
+                        <p>Lopamudra Mitra, Anupam Roy, and more</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 5 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=340&fit=crop">
+
+                    <span class="duration">7:18</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=16">
+
+                    <div class="video-details">
+
+                        <h3>UX Design - What is it? From AJ & Smart</h3>
+
+                        <p>AJ&Smart <i class="fa-solid fa-circle-check"></i></p>
+
+                        <p>150K views • 3 years ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 6 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600&h=340&fit=crop">
+
+                    <span class="duration">3:45</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=17">
+
+                    <div class="video-details">
+
+                        <h3>Mix - Mohon Sharif | Dhakaiya Dose</h3>
+
+                        <p>Mohon Sharif, Odd Signature, and more</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 7 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&h=340&fit=crop">
+
+                    <span class="duration">9:20</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=18">
+
+                    <div class="video-details">
+
+                        <h3>48 VISA-FREE Countries</h3>
+
+                        <p>Nadir On The Go</p>
+
+                        <p>1.7M views • 1 year ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 8 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&h=340&fit=crop">
+
+                    <span class="duration">14:55</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=19">
+
+                    <div class="video-details">
+
+                        <h3>14 Advanced Tips to Design FASTER in Figma</h3>
+
+                        <p>Mizko <i class="fa-solid fa-circle-check"></i></p>
+
+                        <p>53K views • 1 year ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 9 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&h=340&fit=crop">
+
+                    <span class="duration">10:12</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=20">
+
+                    <div class="video-details">
+
+                        <h3>Best Tech Skills to Learn in 2026</h3>
+
+                        <p>Tech Academy</p>
+
+                        <p>250K views • 3 months ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 10 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&h=340&fit=crop">
+
+                    <span class="duration">6:45</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=21">
+
+                    <div class="video-details">
+
+                        <h3>Inside Google Office | Tech Tour</h3>
+
+                        <p>Tech World</p>
+
+                        <p>500K views • 6 months ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 11 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=340&fit=crop">
+
+                    <span class="duration">11:30</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=22">
+
+                    <div class="video-details">
+
+                        <h3>Microsoft Developers Talk About Coding</h3>
+
+                        <p>Microsoft</p>
+
+                        <p>800K views • 8 months ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO 12 -->
+            <div class="video-card">
+
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=340&fit=crop">
+
+                    <span class="duration">15:10</span>
+                </div>
+
+                <div class="video-info">
+
+                    <img class="channel-img" src="https://i.pravatar.cc/40?img=23">
+
+                    <div class="video-details">
+
+                        <h3>Web Development Roadmap for Beginners</h3>
+
+                        <p>Code Academy</p>
+
+                        <p>1M views • 1 year ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
