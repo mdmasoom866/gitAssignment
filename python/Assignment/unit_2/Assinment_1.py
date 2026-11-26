@@ -353,5 +353,3 @@ print("Name Type:", type(name))
 print("Age Type:", type(age))
 print("Marks Type:", type(marks))
 print("College Type:", type(college_name))
-
-

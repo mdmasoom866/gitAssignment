@@ -796,4 +796,3 @@ print(f"Consonants: {consonants}")
 print(f"Uppercase: {uppercase}")
 print(f"Lowercase: {lowercase}")
 print(f"Even Index Characters: {even_index_chars}")
-
